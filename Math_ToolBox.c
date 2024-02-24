@@ -364,19 +364,19 @@ printf("\t\t\t                           ---Welcome to Basic Calculator--- \n\n"
 printf("Enter The Operant, That Calculation You Want For \n\n");
 
 printf(":-> Enter +,-,*,/ for thier respective calculation \n");
-printf(":-> Enter ^ to get power of any no. \n");
-printf(":-> Enter a for all(+,-,*,/) \n");
-printf(":-> Enter p for Percentage \n");
-printf(":-> Enter s for Square Root  \n");
-printf(":-> Enter c for Cube Root \n");
-printf(":-> Enter t for table of any no. \n");
-printf(":-> Enter 2 for Square of any no.  \n");
-printf(":-> Enter 3 for Cube of any no.  \n");
+printf(":-> Enter 1 to get power of any no. \n");
+printf(":-> Enter 2 for all(+,-,*,/) \n");
+printf(":-> Enter 3 for Percentage \n");
+printf(":-> Enter 4 for Square Root  \n");
+printf(":-> Enter 5 for Cube Root \n");
+printf(":-> Enter 6 for table of any no. \n");
+printf(":-> Enter 7 for Square of any no.  \n");
+printf(":-> Enter 8 for Cube of any no.  \n");
 printf("    Enter Operator : ");
 scanf("%c",&op);
 
 
-{  if (op =='+' || op =='-' || op =='*' || op =='/' || op =='a' || op =='p' || op =='s' || op =='^' || op =='c' || op =='2' || op =='3' || op =='t') {
+{  if (op =='+' || op =='-' || op =='*' || op =='/' || op =='1' || op =='2' || op =='3' || op =='4' || op =='5' || op =='6' || op =='7' || op =='8') {
      printf(" \n");  }
 
 else { 
@@ -387,7 +387,7 @@ else {
 
  //                                New If-Else statement
 
-if(op =='+' || op =='-' || op =='*' || op =='/' || op =='a')  {
+if(op =='+' || op =='-' || op =='*' || op =='/' || op =='2')  {
          printf(" Enter The First Value : ");
          scanf("%d",&a);
          printf(" Enter The Second Value : ");
@@ -402,7 +402,7 @@ if(op =='+' || op =='-' || op =='*' || op =='/' || op =='a')  {
     else if(op =='/') {
           division = a/b;
           printf(" The Division of Two Numbers is : %.2f",division); }
-    else if(op =='a') {
+    else if(op =='2') {
           printf(" The Addition of Two Numbers is : %d\n",a+b);
           printf(" The Subtraction of Two Numbers is : %d\n",a-b);
           printf(" The Multiplication of Two Numbers is : %d\n",a*b);
@@ -411,7 +411,7 @@ if(op =='+' || op =='-' || op =='*' || op =='/' || op =='a')  {
 }
 
 
-else if(op =='p') {
+else if(op =='3') {
          printf(" Enter Total Marks Obtained : ");
          scanf("%d",&a);
          printf(" Enter Total No. of Marks : ");
@@ -420,14 +420,14 @@ else if(op =='p') {
          printf(" The Percentage of Your Marks is : %.2f",per);   }
 
 
-else if(op =='s') {
+else if(op =='4') {
          printf(" Enter The No. Of which SQRT you want : ");
          scanf("%d",&a);
          c = sqrt(a);
          printf(" The Square Root of %d is = %.2f",a,c); }
 
 
-else if(op =='^') {
+else if(op =='1') {
         printf(" Enter The base no. : ");
         scanf("%d",&a);
         printf(" Enter The power of base : ");
@@ -436,14 +436,14 @@ else if(op =='^') {
         printf(" The Result of %d ^ %d = %.2f",a,b,c);  }
 
 
-else if (op =='c') {
+else if (op =='5') {
         printf(" Enter the no. For CubeRoot : ");
         scanf("%d",&a);
         c = pow(a, 1.00/3.00) ;
         printf(" The Cube Root of %d is : %.2f",a,c);  }
 
 
-else if (op =='t') {
+else if (op =='6') {
         printf(" Enter any No. For Table : ");
         scanf("%d",&a);
         for(b=1; b<=10; b++) {
@@ -451,14 +451,14 @@ else if (op =='t') {
         printf(" %d*%d = %.2f \n",a,b,c);  }       }
 
 
-else if (op =='2') {
+else if (op =='7') {
         printf(" Enter Any to Find Square of that : ");
         scanf("%d",&a);
         c = a*a;
         printf(" The Square of %d is : %.2f",a,c);  }
 
 
-else if (op =='3') {
+else if (op =='8') {
         printf(" Enter Any no. to Find Cube of that : ");
         scanf("%d",&a);
         c = a*a*a;
@@ -483,7 +483,8 @@ char a,b,c,d,e;
 
 system("cls");
 Mid:
-printf("Hello...\n");
+printf(" Hello...\n\n");
+printf("\t\t           ========================================================================== \n\n");
 printf("\t\t                               ***Welcome To Maths's Toolbox***  \n\n\n");
 
 
@@ -511,6 +512,7 @@ printf("\n\n\n");
 
     Mid1:
 fflush(stdin);
+printf("\t\t           ========================================================================== \n\n");
      printf("\t\t                               ***Welcome To Maths's Toolbox***  \n\n\n");
      printf(" Changing Text Color :- \n");
      printf(" :-> Enter 1 For Blue Color Text \n");
@@ -569,6 +571,7 @@ system("COLOR 0F");
     Mid2:
 
 fflush(stdin);
+printf("\t\t           ========================================================================== \n\n");
      printf("\t\t                               ***Welcome To Maths's Toolbox***  \n\n\n");
      printf(" Changing Background Color :- \n");
      printf(" :-> Enter 1 For Blue Coloured Background   \n");
@@ -648,16 +651,19 @@ else {
 START:
 
 fflush(stdin);
-printf("\t\t                               ***Welcome To Maths's Toolbox***  \n\n");
-printf("                    ---------------------------------------------------------------------------------------------                    \n\n");
+printf("\t\t\t                                ***Main Menu***  \n\n");
+printf("\t\t           =======================================================================                    \n\n");
 printf("\t\t                          ***Enter what Calculations you Want For*** \n\n");
 
-printf(" :-> Enter 1 For all Area Calculations \n");
-printf(" :-> Enter 2 For Temperature Calculations \n");
-printf(" :-> Enter 3 For Interest Related Calculations \n");
-printf(" :-> Enter 4 For Conversion Related Calculations \n");
-printf(" :-> Enter 5 For Basic Calculator \n");
-printf("     Enter Your Choice : ");
+printf("\t\t\t\t\t\t 1. For all Area Calculations \n");
+printf("\t\t\t\t\t\t 2. For Temperature Calculations \n");
+printf("\t\t\t\t\t\t 3. For Interest Related Calculations \n");
+printf("\t\t\t\t\t\t 4. For Conversion Related Calculations \n");
+printf("\t\t\t\t\t\t 5. For Arithmetic Calculations \n");
+printf("\t\t\t\t\t\t 6. To go on Start Menu \n");
+printf("\t\t\t\t\t\t 7. To Exit the Program \n\n");
+printf("\t\t           =======================================================================                    \n\n");
+printf("\t\t\t        Enter Your Choice : ");
    scanf("%s",&want);
 
    system("cls");
@@ -764,6 +770,21 @@ else if(want == '5') {
     
 	    calculator();      }
 
+else if(want == '6') {
+
+ system("COLOR 0F");
+    system("cls");
+
+   goto Mid;
+}
+
+else if(want == '7') {
+
+ system("COLOR 0F");
+    system("cls");
+
+   goto START1;
+}
 
 
 else {
@@ -783,7 +804,7 @@ START1:
 fflush(stdin);
 printf("\t\t\t                               ***Maths's Toolbox***  \n\n\n");
 printf("\n\n                Are You Want To Restart Math's ToolBox?... \n");
-printf(" Enter Y for Yes [0r] N for No : ");
+printf("   Enter Y for Yes [0r] N for No : ");
 scanf("%s",&restart);
 
 {
